@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="2.5" >
 	<!-- 1.启动Spring的容器 -->	
 	<context-param>
-		<param-name>ContextConfigLocation</param-name>
+		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
 	<!-- Bootstraps the root web application context before servlet initialization -->
@@ -27,7 +27,7 @@
 	<!-- Map all requests to the DispatcherServlet for handling -->
 	<servlet-mapping>
 		<servlet-name>springDispatcherServlet</servlet-name>
-		<url-pattern>url</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	<!-- 3.字符编码过滤器，一定要放在所有过滤器之前 -->
